@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;Ex3/disassembly.asm&apos;" deleteContents="false" description="Delete resource &apos;Ex3/disassembly.asm&apos;" element1="/Ex3/disassembly.asm" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1688694192649"/>
+</session>

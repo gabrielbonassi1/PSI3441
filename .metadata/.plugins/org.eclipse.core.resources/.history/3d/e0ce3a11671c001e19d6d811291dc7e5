@@ -1,0 +1,39 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+-include makefile.local
+
+# Add inputs and outputs from these tool invocations to the build variables 
+ASM_SRCS += \
+../disassembly.asm \
+
+ASM_SRCS_QUOTED += \
+"../disassembly.asm" \
+
+OBJS += \
+./disassembly.o \
+
+ASM_DEPS_QUOTED += \
+"./disassembly.d" \
+
+ASM_DEPS += \
+./disassembly.d \
+
+OBJS_QUOTED += \
+"./disassembly.o" \
+
+OBJS_OS_FORMAT += \
+./disassembly.o \
+
+
+# Each subdirectory must supply rules for building sources it contributes
+disassembly.o: ../disassembly.asm
+	@echo 'Building file: $<'
+	@echo 'Executing target #1 $<'
+	@echo 'Invoking: ARM Ltd Windows GCC Assembler'
+	"$(ARMSourceryDirEnv)/arm-none-eabi-gcc" "$<" @"disassembly.args" -MMD -MP -MF"$(@:%.o=%.d)" -o"./disassembly.o"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

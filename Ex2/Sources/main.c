@@ -62,12 +62,12 @@ int main(void)
   /* For example: for(;;) { } */
   for(;;){
 	  // Tarefa 1) LED Vermelho Piscando
-  	  /*LEDR_Neg();
-  	  WAIT1_Waitms(1000);
   	  LEDR_Neg();
   	  WAIT1_Waitms(1000);
   	  LEDR_Neg();
-  	  WAIT1_Waitms(1000);*/
+  	  WAIT1_Waitms(1000);
+  	  LEDR_Neg();
+  	  WAIT1_Waitms(1000);
   	  
   	  //Tarefa 2) LEDs piscando em sequência
   	  LEDG_Neg();

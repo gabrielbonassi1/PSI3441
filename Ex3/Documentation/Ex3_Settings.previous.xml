@@ -359,8 +359,8 @@ PE_DEBUGHALT();
       <Device v="SysTick" />
       <group name="Settings">
         <Clock_source v="External clock" />
-        <Reload_value v="0" />
-        <Counter_period v="STOP" />
+        <Reload_value v="16515165" />
+        <Counter_period v="12.600 s" />
       </group>
       <group name="Interrupts">
         <Interrupt v="INT_SysTick" />

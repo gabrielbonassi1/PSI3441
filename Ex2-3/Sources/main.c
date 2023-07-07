@@ -33,14 +33,12 @@ int main(void) {
 	
 	
 	// Tarefa 3)
-	/*
 	while(1) {
 			GREEN_TOGGLE;
 			delayMs(200);
 			GREEN_TOGGLE;
 			delayMs(500);
 		}
-	*/
 	// Tarefa 5)
 	while(1) {
 		GREEN_TOGGLE;

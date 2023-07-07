@@ -16,7 +16,7 @@ by the component.
 <tr><td colspan="4" class="ttitle1">SysTick Initialization</td></tr>
 <tr><td class="ttitle2">Address</td><td class="ttitle2">Register</td><td class="ttitle2">Register Value</td><td class="ttitle2">Register Description</td></tr>
 <tr><td>0xE000E010</td><td>SYST_CSR</td><td>
-    0x00000000
+    0x00000001
  </td><td>SYST_CSR register, peripheral SysTick.</td></tr>
 <tr><td>0xE000E014</td><td>SYST_RVR</td><td>
     0x00FC005D
@@ -77,13 +77,13 @@ registers of the peripheral(s) configured by the component.
         
 </div>
 <table class="regtbl2"><tr><td class="trowtit" colspan="2">Address</td><td colspan="2">0xE000E010</td></tr>
-<tr class="trowtit"><td  class="trowtit" colspan="2">Initial value</td><td colspan="2">0x00000000</td></tr>
+<tr class="trowtit"><td  class="trowtit" colspan="2">Initial value</td><td colspan="2">0x00000001</td></tr>
 <tr class="trowtit"><td  class="trowtit" colspan="2">After-reset value</td><td colspan="2">0x00000000</td></tr>
 <tr><td class="ttitle2">Bit</td><td class="ttitle2">Field</td><td class="ttitle2">Value</td><td class="ttitle2">Description</td></tr>
 <tr><td>16</td><td>COUNTFLAG</td><td>0x00</td><td>Returns 1 if timer counted to 0 since last time this was read. Clears on read by application of any part of the SysTick Control and Status Register</td>
 <tr><td>2</td><td>CLKSOURCE</td><td>0x00</td><td>Clock source</td>
 <tr><td>1</td><td>TICKINT</td><td>0x00</td><td>Enable SysTick handler to be pend</td>
-<tr><td>0</td><td>ENABLE</td><td>0x00</td><td>Enable SysTick counter</td>
+<tr><td>0</td><td>ENABLE</td><td>0x01</td><td>Enable SysTick counter</td>
 </tr></table>
 <div class="reghdr1">SYST_RVR</div>
 <div class="regdiag">
@@ -189,7 +189,7 @@ registers of the peripheral(s) configured by the component.
 **            ISR Name                                     : 
 **            Timer interrupt                              : Disabled
 **          Initialization                                 : 
-**            Timer enable                                 : no
+**            Timer enable                                 : yes
 **            Clear counter                                : yes
 **            Call Init method                             : yes
 \endcode

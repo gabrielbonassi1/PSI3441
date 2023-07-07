@@ -6,7 +6,7 @@
 **     Component   : Init_SysTick
 **     Version     : Component 01.006, Driver 01.06, CPU db: 3.00.000
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2023-07-01, 18:00, # CodeGen: 2
+**     Date/Time   : 2023-07-06, 22:39, # CodeGen: 4
 **     Abstract    :
 **          This file implements the SysTick (SysTick) module initialization
 **          according to the Peripheral Initialization settings, and
@@ -24,7 +24,7 @@
 **            ISR Name                                     : 
 **            Timer interrupt                              : Disabled
 **          Initialization                                 : 
-**            Timer enable                                 : no
+**            Timer enable                                 : yes
 **            Clear counter                                : yes
 **            Call Init method                             : yes
 **     Contents    :
@@ -106,8 +106,8 @@ void SysTick_Init(void)
   SYST_RVR = SysTick_RVR_RELOAD(0x00FC005D);
   /* SYST_CVR: ??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,CURRENT=0 */
   SYST_CVR = SysTick_CVR_CURRENT(0x00);
-  /* SYST_CSR: ??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,COUNTFLAG=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,CLKSOURCE=0,TICKINT=0,ENABLE=0 */
-  SYST_CSR = 0x00U;
+  /* SYST_CSR: ??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,COUNTFLAG=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,CLKSOURCE=0,TICKINT=0,ENABLE=1 */
+  SYST_CSR = SysTick_CSR_ENABLE_MASK;
 }
 
 

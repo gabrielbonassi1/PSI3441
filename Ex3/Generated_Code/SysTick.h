@@ -6,7 +6,7 @@
 **     Component   : Init_SysTick
 **     Version     : Component 01.006, Driver 01.06, CPU db: 3.00.000
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2023-07-01, 18:00, # CodeGen: 2
+**     Date/Time   : 2023-07-06, 22:39, # CodeGen: 4
 **     Abstract    :
 **          This file implements the SysTick (SysTick) module initialization
 **          according to the Peripheral Initialization settings, and
@@ -24,7 +24,7 @@
 **            ISR Name                                     : 
 **            Timer interrupt                              : Disabled
 **          Initialization                                 : 
-**            Timer enable                                 : no
+**            Timer enable                                 : yes
 **            Clear counter                                : yes
 **            Call Init method                             : yes
 **     Contents    :
