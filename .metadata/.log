@@ -3374,3 +3374,1507 @@ Caused by: org.eclipse.swt.SWTException: Widget is disposed
 
 !ENTRY org.eclipse.cdt.core 1 0 2023-07-06 23:30:37.667
 !MESSAGE Indexed 'Ex4' (3 sources, 30 headers) in 0.14 sec: 469 declarations; 1,261 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+!SESSION 2023-07-07 11:29:06.146 -----------------------------------------------
+eclipse.buildId=I20070613-1755
+java.version=1.6.0_15
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.osgi 2 1 2023-07-07 11:29:07.777
+!MESSAGE NLS missing message: ContentTypes_errorDialogAlreadyExists in: org.eclipse.ui.internal.messages
+
+!ENTRY com.freescale.processorexpert.core 1 0 2023-07-07 11:29:50.833
+!MESSAGE Plugin com.freescale.processorexpert.core.service ProcessorExpertServiceProvider
+
+!ENTRY com.freescale.core.ide.cdt.toolchain 4 0 2023-07-07 11:29:54.175
+!MESSAGE Environment Variable Dependency not resolved for 'ARMGNUDirEnv'.
+
+!ENTRY com.freescale.core.ide.cdt.toolchain 4 0 2023-07-07 11:29:54.175
+!MESSAGE Environment Variable Dependency not resolved for 'ARMSummonDirEnv'.
+
+!ENTRY com.freescale.core.ide.cdt.toolchain 4 0 2023-07-07 11:29:54.175
+!MESSAGE Environment Variable Dependency not resolved for 'ARMYagartoDirEnv'.
+
+!ENTRY com.freescale.core.ide.cdt.toolchain 4 0 2023-07-07 11:29:54.176
+!MESSAGE Environment Variable Dependency not resolved for 'ARMdevkitProDirEnv'.
+
+!ENTRY com.freescale.core.ide.wizard.ui 2 0 2023-07-07 11:29:54.914
+!MESSAGE External elements location 'C:\Freescale\CW MCU v11.1\eclipse\../MCU/lib/wizard_data/mqx/4.0/cf' does not exist
+
+!ENTRY com.freescale.core.ide.wizard.ui 2 0 2023-07-07 11:29:54.915
+!MESSAGE External elements location 'C:\Freescale\CW MCU v11.1\eclipse\../MCU/lib/wizard_data/mqx/4.0/ppc' does not exist
+
+!ENTRY com.freescale.core.ide.wizard.ui 2 0 2023-07-07 11:29:54.915
+!MESSAGE External elements location 'C:\Freescale\CW MCU v11.1\eclipse\../MCU/lib/wizard_data/mqx/4.0/patches' does not exist
+
+!ENTRY com.freescale.core.ide.wizard.ui 2 0 2023-07-07 11:29:55.309
+!MESSAGE External elements location 'C:\Freescale\CW MCU v11.1\eclipse\../MCU/lib/wizard_data/mqx/4.1/cf' does not exist
+
+!ENTRY com.freescale.core.ide.wizard.ui 2 0 2023-07-07 11:29:55.310
+!MESSAGE External elements location 'C:\Freescale\CW MCU v11.1\eclipse\../MCU/lib/wizard_data/mqx/4.1/ppc' does not exist
+
+!ENTRY com.freescale.core.ide.wizard.ui 2 0 2023-07-07 11:29:55.310
+!MESSAGE External elements location 'C:\Freescale\CW MCU v11.1\eclipse\../MCU/lib/wizard_data/mqx/4.1/patches' does not exist
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2023-07-07 11:30:00.054
+!MESSAGE Connection to http://nxp.com/lgfiles/updates/Eclipse/MCU11_1/updatesite/p2.index failed on Received fatal alert: protocol_version. Retry attempt 0 started
+!STACK 0
+javax.net.ssl.SSLException: Received fatal alert: protocol_version
+	at com.sun.net.ssl.internal.ssl.Alerts.getSSLException(Unknown Source)
+	at com.sun.net.ssl.internal.ssl.Alerts.getSSLException(Unknown Source)
+	at com.sun.net.ssl.internal.ssl.SSLSocketImpl.recvAlert(Unknown Source)
+	at com.sun.net.ssl.internal.ssl.SSLSocketImpl.readRecord(Unknown Source)
+	at com.sun.net.ssl.internal.ssl.SSLSocketImpl.performInitialHandshake(Unknown Source)
+	at com.sun.net.ssl.internal.ssl.SSLSocketImpl.writeRecord(Unknown Source)
+	at com.sun.net.ssl.internal.ssl.AppOutputStream.write(Unknown Source)
+	at java.io.BufferedOutputStream.flushBuffer(Unknown Source)
+	at java.io.BufferedOutputStream.flush(Unknown Source)
+	at org.apache.commons.httpclient.HttpConnection.flushRequestOutputStream(HttpConnection.java:828)
+	at org.apache.commons.httpclient.MultiThreadedHttpConnectionManager$HttpConnectionAdapter.flushRequestOutputStream(MultiThreadedHttpConnectionManager.java:1565)
+	at org.apache.commons.httpclient.HttpMethodBase.writeRequest(HttpMethodBase.java:2116)
+	at org.apache.commons.httpclient.HttpMethodBase.execute(HttpMethodBase.java:1096)
+	at org.eclipse.ecf.provider.filetransfer.httpclient.HttpClientRetrieveFileTransfer$GzipGetMethod.execute(HttpClientRetrieveFileTransfer.java:120)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeWithRetry(HttpMethodDirector.java:398)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeMethod(HttpMethodDirector.java:171)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:397)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:346)
+	at org.eclipse.ecf.provider.filetransfer.httpclient.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1129)
+	at org.eclipse.ecf.provider.filetransfer.httpclient.HttpClientRetrieveFileTransfer.openStreams(HttpClientRetrieveFileTransfer.java:699)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:879)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:570)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.MultiProtocolRetrieveAdapter.sendRetrieveRequest(MultiProtocolRetrieveAdapter.java:106)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.sendRetrieveRequest(FileReader.java:422)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.readInto(FileReader.java:355)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.download(RepositoryTransport.java:101)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.download(RepositoryTransport.java:156)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadIndexFile(AbstractRepositoryManager.java:721)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:640)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.getAvailableRepositories(UpdateChecker.java:150)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.checkForUpdates(UpdateChecker.java:128)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:72)
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2023-07-07 11:30:00.839
+!MESSAGE No repository found at jar:file:C:%5CUsers%5Cgabri%5CAppData%5CLocal%5CTemp%5CMicrosoftEdgeDownloads%5C1dc6b8cb-b09c-482b-bd49-5227b99bb624%5CCW%20for%20MCU%2011.1%5Ccom.freescale.mcu11_1.kinetis.updatesite.zip!/.
+
+!ENTRY org.eclipse.osgi 2 1 2023-07-07 12:00:47.496
+!MESSAGE NLS unused message: trace_trigger_dv_error_title in: com.freescale.sa.mcu.analysispoints.nls.ui
+
+!ENTRY org.eclipse.osgi 2 1 2023-07-07 12:00:47.496
+!MESSAGE NLS unused message: trace_trigger_dv_error_message in: com.freescale.sa.mcu.analysispoints.nls.ui
+
+!ENTRY org.eclipse.jface 2 0 2023-07-07 12:00:47.646
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-07-07 12:00:47.646
+!MESSAGE A conflict occurred for ALT+CTRL+I:
+Binding(ALT+CTRL+I,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.open.include.browser,Open Include Browser,
+		Open an include browser on the selected element,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@1cac07e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(ALT+CTRL+I,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.open.include.browser,Open Include Browser,
+		Open an include browser on the selected element,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@1cac07e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-07-07 12:00:47.646
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.text.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.cdt.ui.category.refactoring,Refactor - C++,C/C++ Refactorings,true),
+		org.eclipse.ui.internal.MakeHandlersGo@23b60b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.text.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.cdt.ui.category.refactoring,Refactor - C++,C/C++ Refactorings,true),
+		org.eclipse.ui.internal.MakeHandlersGo@23b60b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-07-07 12:00:47.646
+!MESSAGE A conflict occurred for F4:
+Binding(F4,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.open.type.hierarchy,Open Type Hierarchy,
+		Open a type hierarchy on the selected element,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@849ba2,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(F4,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.open.type.hierarchy,Open Type Hierarchy,
+		Open a type hierarchy on the selected element,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@849ba2,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-07-07 12:00:47.646
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.navigate.opentype,Open Element,
+		Open an element in an Editor,
+		Category(org.eclipse.cdt.ui.category.source,C/C++ Source,C/C++ Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@5c6b1,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.navigate.opentype,Open Element,
+		Open an element in an Editor,
+		Category(org.eclipse.cdt.ui.category.source,C/C++ Source,C/C++ Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@5c6b1,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-07-07 12:00:47.646
+!MESSAGE A conflict occurred for F3:
+Binding(F3,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.opendecl,Open Declaration,
+		Open an editor on the selected element's declaration(s),
+		Category(org.eclipse.cdt.ui.category.source,C/C++ Source,C/C++ Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@137bb9c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(F3,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.opendecl,Open Declaration,
+		Open an editor on the selected element's declaration(s),
+		Category(org.eclipse.cdt.ui.category.source,C/C++ Source,C/C++ Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@137bb9c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-07-07 12:00:47.646
+!MESSAGE A conflict occurred for CTRL+G:
+Binding(CTRL+G,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.search.finddecl,Declaration,
+		Search for declarations of the selected element in the workspace,
+		Category(org.eclipse.cdt.ui.category.source,C/C++ Source,C/C++ Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@1fe31a7,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(CTRL+G,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.search.finddecl,Declaration,
+		Search for declarations of the selected element in the workspace,
+		Category(org.eclipse.cdt.ui.category.source,C/C++ Source,C/C++ Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@1fe31a7,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-07-07 12:00:47.646
+!MESSAGE A conflict occurred for CTRL+SHIFT+G:
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.search.findrefs,References,
+		Search for references to the selected element in the workspace,
+		Category(org.eclipse.cdt.ui.category.source,C/C++ Source,C/C++ Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@16dfc2d,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.search.findrefs,References,
+		Search for references to the selected element in the workspace,
+		Category(org.eclipse.cdt.ui.category.source,C/C++ Source,C/C++ Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@16dfc2d,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-07-07 12:00:47.646
+!MESSAGE A conflict occurred for ALT+CTRL+H:
+Binding(ALT+CTRL+H,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.open.call.hierarchy,Open Call Hierarchy,
+		Open the call hierarchy for the selected element,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@1c7039a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(ALT+CTRL+H,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.open.call.hierarchy,Open Call Hierarchy,
+		Open the call hierarchy for the selected element,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@1c7039a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-07-07 12:00:47.646
+!MESSAGE A conflict occurred for CTRL+SHIFT+H:
+Binding(CTRL+SHIFT+H,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.navigate.open.type.in.hierarchy,Open Type in Hierarchy,
+		Open a type in the type hierarchy view,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@bdaed8,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(CTRL+SHIFT+H,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.navigate.open.type.in.hierarchy,Open Type in Hierarchy,
+		Open a type in the type hierarchy view,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@bdaed8,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+
+!ENTRY org.eclipse.osgi 2 1 2023-07-07 13:26:42.398
+!MESSAGE NLS unused message: NewProjectCreator_coreException1 in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2023-07-07 13:26:42.399
+!MESSAGE NLS unused message: NewProjectCreator_coreException2 in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2023-07-07 13:26:42.399
+!MESSAGE NLS unused message: NewProjectCreator_coreException3 in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2023-07-07 13:26:42.399
+!MESSAGE NLS unused message: NewProjectCreator_exception1 in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2023-07-07 13:26:42.400
+!MESSAGE NLS unused message: NewProjectCreator_wizardException1 in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2023-07-07 13:26:42.400
+!MESSAGE NLS unused message: NewProjectCreator_wizardException2 in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2023-07-07 13:26:42.400
+!MESSAGE NLS unused message: NewProjectCreator_wizardException3 in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2023-07-07 13:26:42.401
+!MESSAGE NLS unused message: NewProjectCreator_wizardException4 in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2023-07-07 13:26:42.401
+!MESSAGE NLS unused message: NewProjectCreator_wizardException5 in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2023-07-07 13:26:42.401
+!MESSAGE NLS unused message: NewProjectCreator_wizardException6 in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2023-07-07 13:26:42.401
+!MESSAGE NLS unused message: NewProjectCreator_wizardException7 in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2023-07-07 13:26:42.402
+!MESSAGE NLS unused message: NewProjectCreator_wizardException8 in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2023-07-07 13:26:42.402
+!MESSAGE NLS unused message: NewProjectCreator_wizardException9 in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2023-07-07 13:26:42.403
+!MESSAGE NLS unused message: NewProjectCreator_logError1 in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2023-07-07 13:26:42.403
+!MESSAGE NLS unused message: NewProjectCreator_logError2 in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2023-07-07 13:26:42.403
+!MESSAGE NLS unused message: NewProjectCreator_logError3 in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2023-07-07 13:26:42.404
+!MESSAGE NLS unused message: NewProjectCreator_logError4 in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2023-07-07 13:26:42.404
+!MESSAGE NLS unused message: NewProjectCreator_multiProjType in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2023-07-07 13:26:42.405
+!MESSAGE NLS unused message: NewProjectCreator_typeNotFound in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2023-07-07 13:26:42.405
+!MESSAGE NLS unused message: NewProjectCreator_saveOptions in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2023-07-07 13:26:42.405
+!MESSAGE NLS unused message: NewProjectCreator_cantLocateType in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2023-07-07 13:26:42.406
+!MESSAGE NLS unused message: NewProjectCreator_addNature in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2023-07-07 13:26:42.406
+!MESSAGE NLS unused message: NewProjectCreator_addBuilder in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2023-07-07 13:26:42.406
+!MESSAGE NLS unused message: NewProjectCreator_settingNotFound in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2023-07-07 13:26:42.407
+!MESSAGE NLS unused message: NewProjectCreator_optionNotFound in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2023-07-07 13:26:42.407
+!MESSAGE NLS unused message: NewProjectCreator_unknownOption in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2023-07-07 13:26:42.407
+!MESSAGE NLS unused message: NewProjectCreator_configNotFound in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2023-07-07 13:26:42.408
+!MESSAGE NLS unused message: NewProjectCreator_varContainsOpenBrace in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2023-07-07 13:26:42.408
+!MESSAGE NLS unused message: NewProjectCreator_endlessVarLoop in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2023-07-07 13:26:42.409
+!MESSAGE NLS unused message: NewProjectCreator_userFilesNotFound in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2023-07-07 13:26:42.409
+!MESSAGE NLS unused message: NewProjectCreator_warningTitleFilesNotFound in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2023-07-07 13:26:42.409
+!MESSAGE NLS unused message: ExtensionLoader_loadexception in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2023-07-07 13:26:42.410
+!MESSAGE NLS unused message: ExtensionLoader_wizardException in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2023-07-07 13:26:42.410
+!MESSAGE NLS unused message: ExtensionLoader_unknown in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2023-07-07 13:26:42.410
+!MESSAGE NLS unused message: ExtensionLoader_illElement in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2023-07-07 13:26:42.410
+!MESSAGE NLS unused message: CWWizard_windowTitle in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2023-07-07 13:26:42.412
+!MESSAGE NLS unused message: CWWizard_description in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2023-07-07 13:26:42.412
+!MESSAGE NLS unused message: CWWizard_pageTitle in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2023-07-07 13:26:42.412
+!MESSAGE NLS unused message: CWWizard_pageDescription in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2023-07-07 13:26:42.413
+!MESSAGE NLS unused message: CWWizard_errorTitle in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2023-07-07 13:26:42.413
+!MESSAGE NLS unused message: CWWizard_errorMsg in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2023-07-07 13:26:42.413
+!MESSAGE NLS unused message: CWWizard_classicImporter_pageTitle in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2023-07-07 13:26:42.414
+!MESSAGE NLS unused message: CWWizard_classicImporter_pageDescription in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2023-07-07 13:26:42.414
+!MESSAGE NLS unused message: WizardInfo_wizardException0 in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2023-07-07 13:26:42.414
+!MESSAGE NLS unused message: WizardInfo_wizardException1 in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2023-07-07 13:26:42.415
+!MESSAGE NLS unused message: ApplySetting_noChildFound in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2023-07-07 13:26:42.415
+!MESSAGE NLS unused message: ApplySetting_attrNotAllowed in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2023-07-07 13:26:42.415
+!MESSAGE NLS unused message: ApplySetting_childNotAllowed in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2023-07-07 13:26:42.415
+!MESSAGE NLS unused message: ApplySetting_attrNotSpecified in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2023-07-07 13:26:42.416
+!MESSAGE NLS unused message: ApplySetting_errValueType in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2023-07-07 13:26:42.416
+!MESSAGE NLS unused message: ApplySetting_illSettingType in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2023-07-07 13:26:42.416
+!MESSAGE NLS unused message: ApplySetting_illSettingMode in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2023-07-07 13:26:42.417
+!MESSAGE NLS unused message: ProjectNamePage_stepFormat in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2023-07-07 13:26:42.417
+!MESSAGE NLS unused message: ProjectNamePage_collisionWarn in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2023-07-07 13:26:42.418
+!MESSAGE NLS unused message: ProjectName_error in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2023-07-07 13:26:42.418
+!MESSAGE NLS unused message: ProjectLocation_error in: com.freescale.core.ide.newprojectwizard.messages
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 13:26:42.885
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.family.hcs08
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 13:26:42.885
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.family.rs08
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 13:26:42.886
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.family.s12z
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 13:26:42.886
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.family.dsc
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 13:26:42.887
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.family.mpc56xx
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 13:26:42.887
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.family.px
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 13:26:42.887
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.family.cfv1
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 13:26:42.888
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.family.cfv1+
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 13:26:42.888
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.family.v2
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 13:26:42.889
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.family.v3
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 13:26:42.889
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.family.v4
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 13:26:42.889
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.family.v4e
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 13:26:42.890
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.board.family.v2
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 13:26:42.890
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.board.family.v3
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 13:26:42.890
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.board.family.v4
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 13:26:42.891
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.board.family.v4e
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 13:26:42.891
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.twrboard.family.v2
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 13:26:42.891
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.twrboard.family.v3
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 13:26:42.892
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.twrboard.family.v4
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 13:26:42.892
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.twrboard.family.v4e
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 13:26:42.894
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.s12z.subfamily.zvm
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 13:26:51.774
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.kinetis_e.ke1x.subfamily.ke14d_36
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 13:26:51.775
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.kinetis_e.ke1x.subfamily.ke14d_72
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 13:26:51.775
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.kinetis_e.ke1x.subfamily.ke15d_36
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 13:26:51.775
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.kinetis_e.ke1x.subfamily.ke15d_72
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 13:26:51.778
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.mk10.ID_CHIP_MK10N512
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 13:26:51.778
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.mk10.ID_CHIP_MK10X128
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 13:26:51.779
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.mk10.ID_CHIP_MK10X256
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 13:26:51.779
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.mk20.ID_CHIP_MK20N512
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 13:26:51.780
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.mk20.ID_CHIP_MK20X128
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 13:26:51.780
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.mk20.ID_CHIP_MK20X256
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 13:26:51.780
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.mk30.ID_CHIP_MK30N512
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 13:26:51.780
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.mk30.ID_CHIP_MK30X128
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 13:26:51.780
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.mk30.ID_CHIP_MK30X256
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 13:26:51.782
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.mk40.ID_CHIP_MK40N512
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 13:26:51.782
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.mk40.ID_CHIP_MK40X128
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 13:26:51.782
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.mk40.ID_CHIP_MK40X256
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 13:26:51.783
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.mk60.ID_CHIP_MK60N256
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 13:26:51.783
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.mk60.ID_CHIP_MK60N512
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 13:26:51.784
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.mk60.ID_CHIP_MK60X256
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 13:27:08.701
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.cf_v2v4.ID_SIZE_LIB_YES
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 13:27:08.702
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.pa.hasPermanent.dualCore.homogeneous.config
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 13:27:08.703
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.cf_v2v4.ID_SOFTWARE_FPU
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 13:27:08.704
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.cf_v2v4.ID_HARDWARE_FPU
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 13:27:08.704
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.cf_v2v4.ID_SIZE_LIB_NO
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 13:27:08.705
+!MESSAGE Unknown condition ID: mcu.projectwizard.chip.k10d_100.ID_CHIP_MK60DN256Z
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 13:27:08.705
+!MESSAGE Unknown condition ID: mcu.projectwizard.chip.k10d_100.ID_CHIP_MK60DN256
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 13:27:08.710
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.family.hc08
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 13:27:08.711
+!MESSAGE Unknown condition ID: com.processorexpert.variant.7
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 13:27:08.711
+!MESSAGE Unknown condition ID: com.processorexpert.variant.8
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 13:27:08.712
+!MESSAGE Unknown condition ID: com.processorexpert.variant.9
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 13:27:08.713
+!MESSAGE Unknown condition ID: com.processorexpert.configuration.3
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 13:27:08.713
+!MESSAGE Unknown condition ID: com.processorexpert.configuration.4
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 13:27:08.714
+!MESSAGE Unknown condition ID: com.processorexpert.configuration.5
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 13:27:08.714
+!MESSAGE Unknown condition ID: com.processorexpert.configuration.6
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 13:27:08.752
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.isColdFire.v1.ID_TARGET_BOOTFLASH
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 13:27:08.752
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.cf_v2v4.ID_TARGET_INTRAM
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 13:27:08.754
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.cf_v2v4.ID_TARGET_CONSOLE_INTRAM
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 13:27:08.754
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.cf_v2v4.ID_TARGET_EXTRAM
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 13:27:08.754
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.cf_v2v4.ID_TARGET_CONSOLE_EXTRAM
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 13:27:08.755
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.cf_v2v4.ID_TARGET_INTFLASH
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 13:27:08.755
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.cf_v2v4.ID_TARGET_EXTFLASH
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 13:27:08.756
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.dsc.ID_TARGET_INTERNAL_FLASH_SDM
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 13:27:08.756
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.dsc.ID_TARGET_INTERNAL_FLASH_LDM
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 13:27:08.757
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.dsc.ID_TARGET_EXTERNAL_RAM_SDM
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 13:27:08.757
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.dsc.ID_TARGET_EXTERNAL_RAM_LDM
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 13:27:08.757
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.dsc.ID_TARGET_SIMULATOR
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 13:27:08.758
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.pa.ID_TARGET_INTERNAL_RAM
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 13:27:08.758
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.pa.ID_TARGET_INTERNAL_FLASH
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 13:27:08.819
+!MESSAGE Unknown condition ID: mcu.elfimporter.condition.copytoproject.cfv1
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 13:27:08.819
+!MESSAGE Unknown condition ID: mcu.elfimporter.condition.dontcopytoproject
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 13:27:08.820
+!MESSAGE Unknown condition ID: mcu.elfimporter.condition.copy.abs
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 13:27:08.820
+!MESSAGE Unknown condition ID: mcu.elfimporter.condition.copyelf.pa
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 13:27:08.820
+!MESSAGE Unknown condition ID: mcu.elfimporter.condition.copy.elf.arm
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 13:27:08.821
+!MESSAGE Unknown condition ID: mcu.elfimporter.condition.copy.elf.dsc
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 13:27:08.821
+!MESSAGE Unknown condition ID: mcu.elfimporter.condition.copy.elf.s12z
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 13:27:08.821
+!MESSAGE Unknown condition ID: mcu.elfimporter.condition.copy.bb.elf
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 13:27:08.822
+!MESSAGE Unknown condition ID: mcu.elfimporter.condition.copy.kd.elf
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 13:27:08.822
+!MESSAGE Unknown condition ID: mcu.elfimporter.condition.copy.app.elf
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 13:27:08.822
+!MESSAGE Unknown condition ID: mcu.elfimporter.condition.copy.flt
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 13:27:08.823
+!MESSAGE Unknown condition ID: mcu.elfimporter.condition.arm.setPnEAttribute.STARTUP_USE_SWD
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-07-07 13:27:11.738
+!MESSAGE Indexed 'Ex5' (5 sources, 33 headers) in 0.56 sec: 1,059 declarations; 1,726 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:10:46.781
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.family.hcs08
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:10:46.782
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.family.rs08
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:10:46.782
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.family.s12z
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:10:46.782
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.family.dsc
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:10:46.783
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.family.mpc56xx
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:10:46.783
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.family.px
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:10:46.783
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.family.cfv1
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:10:46.783
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.family.cfv1+
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:10:46.783
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.family.v2
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:10:46.785
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.family.v3
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:10:46.785
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.family.v4
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:10:46.785
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.family.v4e
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:10:46.785
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.board.family.v2
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:10:46.786
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.board.family.v3
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:10:46.786
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.board.family.v4
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:10:46.786
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.board.family.v4e
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:10:46.787
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.twrboard.family.v2
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:10:46.787
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.twrboard.family.v3
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:10:46.787
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.twrboard.family.v4
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:10:46.788
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.twrboard.family.v4e
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:10:46.789
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.s12z.subfamily.zvm
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:10:53.548
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.kinetis_e.ke1x.subfamily.ke14d_36
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:10:53.549
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.kinetis_e.ke1x.subfamily.ke14d_72
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:10:53.549
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.kinetis_e.ke1x.subfamily.ke15d_36
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:10:53.550
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.kinetis_e.ke1x.subfamily.ke15d_72
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:10:54.814
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.mk10.ID_CHIP_MK10N512
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:10:54.814
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.mk10.ID_CHIP_MK10X128
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:10:54.815
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.mk10.ID_CHIP_MK10X256
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:10:54.815
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.mk20.ID_CHIP_MK20N512
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:10:54.815
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.mk20.ID_CHIP_MK20X128
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:10:54.815
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.mk20.ID_CHIP_MK20X256
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:10:54.816
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.mk30.ID_CHIP_MK30N512
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:10:54.816
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.mk30.ID_CHIP_MK30X128
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:10:54.816
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.mk30.ID_CHIP_MK30X256
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:10:54.817
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.mk40.ID_CHIP_MK40N512
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:10:54.817
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.mk40.ID_CHIP_MK40X128
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:10:54.817
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.mk40.ID_CHIP_MK40X256
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:10:54.817
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.mk60.ID_CHIP_MK60N256
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:10:54.819
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.mk60.ID_CHIP_MK60N512
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:10:54.819
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.mk60.ID_CHIP_MK60X256
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:11:08.342
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.cf_v2v4.ID_SIZE_LIB_YES
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:11:08.343
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.pa.hasPermanent.dualCore.homogeneous.config
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:11:08.343
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.cf_v2v4.ID_SOFTWARE_FPU
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:11:08.343
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.cf_v2v4.ID_HARDWARE_FPU
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:11:08.345
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.cf_v2v4.ID_SIZE_LIB_NO
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:11:08.345
+!MESSAGE Unknown condition ID: mcu.projectwizard.chip.k10d_100.ID_CHIP_MK60DN256Z
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:11:08.346
+!MESSAGE Unknown condition ID: mcu.projectwizard.chip.k10d_100.ID_CHIP_MK60DN256
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:11:08.350
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.family.hc08
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:11:08.351
+!MESSAGE Unknown condition ID: com.processorexpert.variant.7
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:11:08.352
+!MESSAGE Unknown condition ID: com.processorexpert.variant.8
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:11:08.352
+!MESSAGE Unknown condition ID: com.processorexpert.variant.9
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:11:08.353
+!MESSAGE Unknown condition ID: com.processorexpert.configuration.3
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:11:08.353
+!MESSAGE Unknown condition ID: com.processorexpert.configuration.4
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:11:08.353
+!MESSAGE Unknown condition ID: com.processorexpert.configuration.5
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:11:08.353
+!MESSAGE Unknown condition ID: com.processorexpert.configuration.6
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:11:08.383
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.isColdFire.v1.ID_TARGET_BOOTFLASH
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:11:08.383
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.cf_v2v4.ID_TARGET_INTRAM
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:11:08.383
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.cf_v2v4.ID_TARGET_CONSOLE_INTRAM
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:11:08.385
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.cf_v2v4.ID_TARGET_EXTRAM
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:11:08.385
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.cf_v2v4.ID_TARGET_CONSOLE_EXTRAM
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:11:08.385
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.cf_v2v4.ID_TARGET_INTFLASH
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:11:08.386
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.cf_v2v4.ID_TARGET_EXTFLASH
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:11:08.386
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.dsc.ID_TARGET_INTERNAL_FLASH_SDM
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:11:08.387
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.dsc.ID_TARGET_INTERNAL_FLASH_LDM
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:11:08.387
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.dsc.ID_TARGET_EXTERNAL_RAM_SDM
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:11:08.387
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.dsc.ID_TARGET_EXTERNAL_RAM_LDM
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:11:08.388
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.dsc.ID_TARGET_SIMULATOR
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:11:08.388
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.pa.ID_TARGET_INTERNAL_RAM
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:11:08.389
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.pa.ID_TARGET_INTERNAL_FLASH
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:11:08.478
+!MESSAGE Unknown condition ID: mcu.elfimporter.condition.copytoproject.cfv1
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:11:08.479
+!MESSAGE Unknown condition ID: mcu.elfimporter.condition.dontcopytoproject
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:11:08.479
+!MESSAGE Unknown condition ID: mcu.elfimporter.condition.copy.abs
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:11:08.479
+!MESSAGE Unknown condition ID: mcu.elfimporter.condition.copyelf.pa
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:11:08.480
+!MESSAGE Unknown condition ID: mcu.elfimporter.condition.copy.elf.arm
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:11:08.480
+!MESSAGE Unknown condition ID: mcu.elfimporter.condition.copy.elf.dsc
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:11:08.480
+!MESSAGE Unknown condition ID: mcu.elfimporter.condition.copy.elf.s12z
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:11:08.481
+!MESSAGE Unknown condition ID: mcu.elfimporter.condition.copy.bb.elf
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:11:08.481
+!MESSAGE Unknown condition ID: mcu.elfimporter.condition.copy.kd.elf
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:11:08.481
+!MESSAGE Unknown condition ID: mcu.elfimporter.condition.copy.app.elf
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:11:08.482
+!MESSAGE Unknown condition ID: mcu.elfimporter.condition.copy.flt
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:11:08.482
+!MESSAGE Unknown condition ID: mcu.elfimporter.condition.arm.setPnEAttribute.STARTUP_USE_SWD
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:11:08.859
+!MESSAGE Unknown condition ID: mcu.projectwizard.chip.family.cfv1+
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-07-07 14:11:11.412
+!MESSAGE Indexed 'Ex5' (3 sources, 30 headers) in 0.14 sec: 469 declarations; 1,261 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-07-07 14:30:08.097
+!MESSAGE Indexed 'Ex5_3' (8 sources, 60 headers) in 1.40 sec: 1,995 declarations; 5,517 references; 13 unresolved inclusions; 21 syntax errors; 22 unresolved names (0.29%)
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:30:15.892
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.family.hcs08
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:30:15.892
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.family.rs08
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:30:15.892
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.family.s12z
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:30:15.893
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.family.dsc
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:30:15.893
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.family.mpc56xx
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:30:15.893
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.family.px
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:30:15.894
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.family.cfv1
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:30:15.894
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.family.cfv1+
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:30:15.895
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.family.v2
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:30:15.895
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.family.v3
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:30:15.895
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.family.v4
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:30:15.895
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.family.v4e
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:30:15.896
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.board.family.v2
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:30:15.896
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.board.family.v3
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:30:15.896
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.board.family.v4
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:30:15.897
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.board.family.v4e
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:30:15.897
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.twrboard.family.v2
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:30:15.897
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.twrboard.family.v3
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:30:15.898
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.twrboard.family.v4
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:30:15.898
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.twrboard.family.v4e
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:30:15.899
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.s12z.subfamily.zvm
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:30:27.070
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.kinetis_e.ke1x.subfamily.ke14d_36
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:30:27.070
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.kinetis_e.ke1x.subfamily.ke14d_72
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:30:27.071
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.kinetis_e.ke1x.subfamily.ke15d_36
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:30:27.071
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.kinetis_e.ke1x.subfamily.ke15d_72
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:30:27.074
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.mk10.ID_CHIP_MK10N512
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:30:27.074
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.mk10.ID_CHIP_MK10X128
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:30:27.075
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.mk10.ID_CHIP_MK10X256
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:30:27.075
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.mk20.ID_CHIP_MK20N512
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:30:27.075
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.mk20.ID_CHIP_MK20X128
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:30:27.076
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.mk20.ID_CHIP_MK20X256
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:30:27.076
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.mk30.ID_CHIP_MK30N512
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:30:27.076
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.mk30.ID_CHIP_MK30X128
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:30:27.077
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.mk30.ID_CHIP_MK30X256
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:30:27.077
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.mk40.ID_CHIP_MK40N512
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:30:27.077
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.mk40.ID_CHIP_MK40X128
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:30:27.078
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.mk40.ID_CHIP_MK40X256
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:30:27.078
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.mk60.ID_CHIP_MK60N256
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:30:27.078
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.mk60.ID_CHIP_MK60N512
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:30:27.078
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.mk60.ID_CHIP_MK60X256
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:30:34.635
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.cf_v2v4.ID_SIZE_LIB_YES
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:30:34.635
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.pa.hasPermanent.dualCore.homogeneous.config
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:30:34.636
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.cf_v2v4.ID_SOFTWARE_FPU
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:30:34.636
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.cf_v2v4.ID_HARDWARE_FPU
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:30:34.636
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.cf_v2v4.ID_SIZE_LIB_NO
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:30:34.637
+!MESSAGE Unknown condition ID: mcu.projectwizard.chip.k10d_100.ID_CHIP_MK60DN256Z
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:30:34.637
+!MESSAGE Unknown condition ID: mcu.projectwizard.chip.k10d_100.ID_CHIP_MK60DN256
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:30:34.643
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.family.hc08
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:30:34.643
+!MESSAGE Unknown condition ID: com.processorexpert.variant.7
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:30:34.645
+!MESSAGE Unknown condition ID: com.processorexpert.variant.8
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:30:34.645
+!MESSAGE Unknown condition ID: com.processorexpert.variant.9
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:30:34.646
+!MESSAGE Unknown condition ID: com.processorexpert.configuration.3
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:30:34.646
+!MESSAGE Unknown condition ID: com.processorexpert.configuration.4
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:30:34.646
+!MESSAGE Unknown condition ID: com.processorexpert.configuration.5
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:30:34.647
+!MESSAGE Unknown condition ID: com.processorexpert.configuration.6
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:30:34.677
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.isColdFire.v1.ID_TARGET_BOOTFLASH
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:30:34.678
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.cf_v2v4.ID_TARGET_INTRAM
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:30:34.678
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.cf_v2v4.ID_TARGET_CONSOLE_INTRAM
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:30:34.679
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.cf_v2v4.ID_TARGET_EXTRAM
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:30:34.679
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.cf_v2v4.ID_TARGET_CONSOLE_EXTRAM
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:30:34.679
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.cf_v2v4.ID_TARGET_INTFLASH
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:30:34.680
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.cf_v2v4.ID_TARGET_EXTFLASH
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:30:34.680
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.dsc.ID_TARGET_INTERNAL_FLASH_SDM
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:30:34.681
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.dsc.ID_TARGET_INTERNAL_FLASH_LDM
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:30:34.681
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.dsc.ID_TARGET_EXTERNAL_RAM_SDM
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:30:34.681
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.dsc.ID_TARGET_EXTERNAL_RAM_LDM
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:30:34.682
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.dsc.ID_TARGET_SIMULATOR
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:30:34.682
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.pa.ID_TARGET_INTERNAL_RAM
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:30:34.682
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.pa.ID_TARGET_INTERNAL_FLASH
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:30:34.733
+!MESSAGE Unknown condition ID: mcu.elfimporter.condition.copytoproject.cfv1
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:30:34.735
+!MESSAGE Unknown condition ID: mcu.elfimporter.condition.dontcopytoproject
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:30:34.735
+!MESSAGE Unknown condition ID: mcu.elfimporter.condition.copy.abs
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:30:34.735
+!MESSAGE Unknown condition ID: mcu.elfimporter.condition.copyelf.pa
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:30:34.736
+!MESSAGE Unknown condition ID: mcu.elfimporter.condition.copy.elf.arm
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:30:34.736
+!MESSAGE Unknown condition ID: mcu.elfimporter.condition.copy.elf.dsc
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:30:34.736
+!MESSAGE Unknown condition ID: mcu.elfimporter.condition.copy.elf.s12z
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:30:34.737
+!MESSAGE Unknown condition ID: mcu.elfimporter.condition.copy.bb.elf
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:30:34.737
+!MESSAGE Unknown condition ID: mcu.elfimporter.condition.copy.kd.elf
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:30:34.737
+!MESSAGE Unknown condition ID: mcu.elfimporter.condition.copy.app.elf
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:30:34.738
+!MESSAGE Unknown condition ID: mcu.elfimporter.condition.copy.flt
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:30:34.738
+!MESSAGE Unknown condition ID: mcu.elfimporter.condition.arm.setPnEAttribute.STARTUP_USE_SWD
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-07-07 14:30:37.660
+!MESSAGE Indexed 'Ex5_1_2' (5 sources, 33 headers) in 0.56 sec: 1,059 declarations; 1,726 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:53:34.356
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.family.hcs08
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:53:34.356
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.family.rs08
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:53:34.357
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.family.s12z
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:53:34.357
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.family.dsc
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:53:34.357
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.family.mpc56xx
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:53:34.358
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.family.px
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:53:34.358
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.family.cfv1
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:53:34.358
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.family.cfv1+
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:53:34.359
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.family.v2
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:53:34.359
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.family.v3
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:53:34.360
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.family.v4
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:53:34.360
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.family.v4e
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:53:34.360
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.board.family.v2
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:53:34.361
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.board.family.v3
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:53:34.361
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.board.family.v4
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:53:34.361
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.board.family.v4e
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:53:34.362
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.twrboard.family.v2
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:53:34.362
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.twrboard.family.v3
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:53:34.362
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.twrboard.family.v4
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:53:34.363
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.twrboard.family.v4e
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:53:34.363
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.s12z.subfamily.zvm
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:53:48.892
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.kinetis_e.ke1x.subfamily.ke14d_36
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:53:48.892
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.kinetis_e.ke1x.subfamily.ke14d_72
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:53:48.893
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.kinetis_e.ke1x.subfamily.ke15d_36
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:53:48.893
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.kinetis_e.ke1x.subfamily.ke15d_72
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:53:48.895
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.mk10.ID_CHIP_MK10N512
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:53:48.895
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.mk10.ID_CHIP_MK10X128
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:53:48.895
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.mk10.ID_CHIP_MK10X256
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:53:48.897
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.mk20.ID_CHIP_MK20N512
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:53:48.897
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.mk20.ID_CHIP_MK20X128
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:53:48.897
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.mk20.ID_CHIP_MK20X256
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:53:48.898
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.mk30.ID_CHIP_MK30N512
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:53:48.898
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.mk30.ID_CHIP_MK30X128
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:53:48.898
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.mk30.ID_CHIP_MK30X256
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:53:48.899
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.mk40.ID_CHIP_MK40N512
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:53:48.899
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.mk40.ID_CHIP_MK40X128
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:53:48.899
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.mk40.ID_CHIP_MK40X256
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:53:48.900
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.mk60.ID_CHIP_MK60N256
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:53:48.900
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.mk60.ID_CHIP_MK60N512
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:53:48.900
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.mk60.ID_CHIP_MK60X256
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:54:01.301
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.cf_v2v4.ID_SIZE_LIB_YES
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:54:01.302
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.pa.hasPermanent.dualCore.homogeneous.config
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:54:01.303
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.cf_v2v4.ID_SOFTWARE_FPU
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:54:01.303
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.cf_v2v4.ID_HARDWARE_FPU
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:54:01.303
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.cf_v2v4.ID_SIZE_LIB_NO
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:54:01.304
+!MESSAGE Unknown condition ID: mcu.projectwizard.chip.k10d_100.ID_CHIP_MK60DN256Z
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:54:01.304
+!MESSAGE Unknown condition ID: mcu.projectwizard.chip.k10d_100.ID_CHIP_MK60DN256
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:54:01.310
+!MESSAGE Unknown UI Element ID: mcu.projectwizard.chip.family.hc08
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:54:01.311
+!MESSAGE Unknown condition ID: com.processorexpert.variant.7
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:54:01.311
+!MESSAGE Unknown condition ID: com.processorexpert.variant.8
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:54:01.311
+!MESSAGE Unknown condition ID: com.processorexpert.variant.9
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:54:01.312
+!MESSAGE Unknown condition ID: com.processorexpert.configuration.3
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:54:01.312
+!MESSAGE Unknown condition ID: com.processorexpert.configuration.4
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:54:01.313
+!MESSAGE Unknown condition ID: com.processorexpert.configuration.5
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:54:01.313
+!MESSAGE Unknown condition ID: com.processorexpert.configuration.6
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:54:01.346
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.isColdFire.v1.ID_TARGET_BOOTFLASH
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:54:01.346
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.cf_v2v4.ID_TARGET_INTRAM
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:54:01.346
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.cf_v2v4.ID_TARGET_CONSOLE_INTRAM
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:54:01.347
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.cf_v2v4.ID_TARGET_EXTRAM
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:54:01.347
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.cf_v2v4.ID_TARGET_CONSOLE_EXTRAM
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:54:01.347
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.cf_v2v4.ID_TARGET_INTFLASH
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:54:01.348
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.cf_v2v4.ID_TARGET_EXTFLASH
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:54:01.348
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.dsc.ID_TARGET_INTERNAL_FLASH_SDM
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:54:01.348
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.dsc.ID_TARGET_INTERNAL_FLASH_LDM
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:54:01.348
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.dsc.ID_TARGET_EXTERNAL_RAM_SDM
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:54:01.349
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.dsc.ID_TARGET_EXTERNAL_RAM_LDM
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:54:01.349
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.dsc.ID_TARGET_SIMULATOR
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:54:01.350
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.pa.ID_TARGET_INTERNAL_RAM
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:54:01.350
+!MESSAGE Unknown condition ID: mcu.projectwizard.condition.pa.ID_TARGET_INTERNAL_FLASH
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:54:01.391
+!MESSAGE Unknown condition ID: mcu.elfimporter.condition.copytoproject.cfv1
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:54:01.391
+!MESSAGE Unknown condition ID: mcu.elfimporter.condition.dontcopytoproject
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:54:01.391
+!MESSAGE Unknown condition ID: mcu.elfimporter.condition.copy.abs
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:54:01.393
+!MESSAGE Unknown condition ID: mcu.elfimporter.condition.copyelf.pa
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:54:01.393
+!MESSAGE Unknown condition ID: mcu.elfimporter.condition.copy.elf.arm
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:54:01.393
+!MESSAGE Unknown condition ID: mcu.elfimporter.condition.copy.elf.dsc
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:54:01.393
+!MESSAGE Unknown condition ID: mcu.elfimporter.condition.copy.elf.s12z
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:54:01.394
+!MESSAGE Unknown condition ID: mcu.elfimporter.condition.copy.bb.elf
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:54:01.394
+!MESSAGE Unknown condition ID: mcu.elfimporter.condition.copy.kd.elf
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:54:01.394
+!MESSAGE Unknown condition ID: mcu.elfimporter.condition.copy.app.elf
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:54:01.394
+!MESSAGE Unknown condition ID: mcu.elfimporter.condition.copy.flt
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:54:01.395
+!MESSAGE Unknown condition ID: mcu.elfimporter.condition.arm.setPnEAttribute.STARTUP_USE_SWD
+
+!ENTRY com.freescale.core.ide.wizard.ui 4 0 2023-07-07 14:54:01.762
+!MESSAGE Unknown condition ID: mcu.projectwizard.chip.family.cfv1+
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-07-07 14:54:04.557
+!MESSAGE Indexed 'Ex6' (3 sources, 30 headers) in 0.11 sec: 469 declarations; 1,261 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY com.freescale.processorexpert.core 4 0 2023-07-07 15:33:10.783
+!MESSAGE org.eclipse.core.internal.resources.ResourceException: Resource '/Ex5' does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/Ex5' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:341)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:215)
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:165)
+	at org.eclipse.core.internal.resources.Resource.createMarker(Resource.java:734)
+	at com.processorexpert.core.errors.ExpertErrorManager.reportProblemAdvanced(ExpertErrorManager.java:290)
+	at com.processorexpert.core.errors.ExpertErrorManager.reportProblemAdvanced(ExpertErrorManager.java:272)
+	at com.processorexpert.core.ProjectPE.save(ProjectPE.java:3065)
+	at com.processorexpert.core.ProjectPE.doSave(ProjectPE.java:3653)
+	at com.processorexpert.core.PEApplication.queryClosing(PEApplication.java:393)
+	at com.processorexpert.core.PEApplication.preShutdown(PEApplication.java:440)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:879)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:49)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:175)
+	at org.eclipse.ui.internal.Workbench.firePreShutdown(Workbench.java:877)
+	at org.eclipse.ui.internal.Workbench.busyClose(Workbench.java:1012)
+	at org.eclipse.ui.internal.Workbench.access$16(Workbench.java:1002)
+	at org.eclipse.ui.internal.Workbench$17.run(Workbench.java:1183)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1181)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1154)
+	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(WorkbenchWindow.java:1169)
+	at org.eclipse.ui.internal.WorkbenchWindow.access$14(WorkbenchWindow.java:1140)
+	at org.eclipse.ui.internal.WorkbenchWindow$10.run(WorkbenchWindow.java:1204)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1202)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1214)
+	at org.eclipse.ui.internal.WorkbenchWindow$6.close(WorkbenchWindow.java:449)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer$11.shellClosed(WBWRenderer.java:580)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:98)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1077)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1062)
+	at org.eclipse.swt.widgets.Decorations.closeWidget(Decorations.java:309)
+	at org.eclipse.swt.widgets.Decorations.WM_CLOSE(Decorations.java:1694)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4530)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:341)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1627)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2069)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4991)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2541)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:498)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4623)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:341)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1627)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2069)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4991)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2541)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:498)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4623)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:341)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1627)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2069)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4991)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2546)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3767)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1053)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:942)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:86)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:588)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:543)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:353)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:180)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:630)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:585)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1439)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2023-07-07 15:33:10.784
+!MESSAGE Resource '/Ex5' does not exist.

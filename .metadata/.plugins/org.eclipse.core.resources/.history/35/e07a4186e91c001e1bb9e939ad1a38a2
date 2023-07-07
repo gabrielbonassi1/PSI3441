@@ -1,0 +1,139 @@
+/* ###################################################################
+**     Filename    : main.c
+**     Project     : Ex5
+**     Processor   : MKL25Z128VLK4
+**     Version     : Driver 01.01
+**     Compiler    : GNU C Compiler
+**     Date/Time   : 2023-07-07, 14:11, # CodeGen: 0
+**     Abstract    :
+**         Main module.
+**         This module contains user's application code.
+**     Settings    :
+**     Contents    :
+**         No public methods
+**
+** ###################################################################*/
+/*!
+** @file main.c
+** @version 01.01
+** @brief
+**         Main module.
+**         This module contains user's application code.
+*/         
+/*!
+**  @addtogroup main_module main module documentation
+**  @{
+*/         
+/* MODULE main */
+
+
+/* Including needed modules to compile this module/procedure */
+#include "Cpu.h"
+#include "Events.h"
+/* Including shared modules, which are used for whole project */
+#include "PE_Types.h"
+#include "PE_Error.h"
+#include "PE_Const.h"
+#include "IO_Map.h"
+
+
+void ADC0_init(void);
+void LED_set(int s);
+void LED_init(void);
+/* User includes (#include below this line is not maintained by Processor Expert) */
+
+/*lint -save  -e970 Disable MISRA rule (6.3) checking. */
+int main(void)
+/*lint -restore Enable MISRA rule (6.3) checking. */
+{
+  /* Write your local variable definition here */
+
+  /*** Processor Expert internal initialization. DON'T REMOVE THIS CODE!!! ***/
+  PE_low_level_init();
+  /*** End of Processor Expert internal initialization.                    ***/
+
+  /* Write your code here */
+  /* For example: for(;;) { } */
+  
+    short int result;
+
+    LED_init();
+    ADC0_init();
+
+    while (1)
+    {
+        ADC0_SC1A = 0x10; // inicia a conversao, single-ended, AD8 selecionado como input
+
+        while (!(ADC0_SC1A & 0x80)){} //aguarda a conversao acabar (faco um AND entre a flag COCO e 1, quando os 2 forem 1, retorna 1 e para o while)
+
+        result = ADC0_RA; // le o resultado da conversao na var result
+        LED_set(result >> 7); // seta o led com base no bit 7 do result
+        
+    }
+    
+}
+
+  /*** Don't write any code pass this line, or it will be deleted during code generation. ***/
+  /*** RTOS startup code. Macro PEX_RTOS_START is defined by the RTOS component. DON'T MODIFY THIS CODE!!! ***/
+  #ifdef PEX_RTOS_START
+    PEX_RTOS_START();                  /* Startup of the selected RTOS. Macro is defined by the RTOS component. */
+  #endif
+  /*** End of RTOS startup code.  ***/
+  /*** Processor Expert end of main routine. DON'T MODIFY THIS CODE!!! ***/
+  for(;;){}
+  /*** Processor Expert end of main routine. DON'T WRITE CODE BELOW!!! ***/
+} /*** End of main routine. DO NOT MODIFY THIS TEXT!!! ***/
+
+/* END main */
+/*!
+** @}
+*/
+/*
+** ###################################################################
+**
+**     This file was created by Processor Expert 10.3 [05.09]
+**     for the Freescale Kinetis series of microcontrollers.
+**
+** ###################################################################
+*/
+
+void ADC0_init(void) {
+    SIM_SCGC5 |= (1<<10); // enable clock PORTB (pg. 206)
+    SIM_SCGC6 |= 0x8000000; // enable clock ADC0 (pg. 207)
+    PORTE_PCR0 = 0; // enable PTB0 pin out
+    ADC0_SC2 &= ~0x40; // software trigger
+    ADC0_CFG1 = 0x54;
+}
+
+void LED_init(void) {
+    SIM_SCGC5 |= 0x1000; // enable clock PORTD
+    SIM_SCGC5 |= 0x400; // enable clock PORTB
+    // posso dar enable nos dois clocks ao mesmo tempo? sim!
+    PORTD_PCR1 = 0x100; // enable PTD1 as GPIO (pg. 183) (Blue LED)
+    PORTB_PCR19 = 0x100; // enable PTB19 as GPIO (Green LED)
+    PORTB_PCR18 = 0x100; // enable PTB18 as GPIO (Red LED)
+
+    GPIOB_PDDR |= 0x80000; // make PTB19 (Green LED) as output (pg. 778) (bit relativo ao numero da porta)
+    GPIOB_PDDR |= 0x40000; // make PTB18 as output (Red LED)
+    GPIOB_PDDR |= 0x02; // make PTD1 as output (Blue LED)
+}
+
+void LED_set(int s) {
+    // Red LED
+    if (s & 1) { // usa BIT 0 de s
+        GPIOB_PCOR = 0x40000; // turn on
+    } else {
+        GPIOB_PSOR = 0x40000; // turn off
+    }
+    // Green LED
+    if (s & 2) { //usa BIT 1 do s
+        GPIOB_PCOR = 0x80000; // turn on
+    } else {
+        GPIOB_PSOR = 0x40000; // turn off
+    }
+    // Blue LED
+    if (s & 4) { //usa bit 2 do s
+        GPIOD_PCOR = 0x02; // turn on
+    } else {
+        GPIOD_PSOR = 0x02; // turn off
+    }

@@ -1,5 +1,3 @@
-#include "MKL25Z4.h"
-
 void ADC0_init(void);
 void LED_set(int s);
 void LED_init(void);
